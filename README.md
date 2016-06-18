@@ -10,11 +10,11 @@ To use:
     ```json
     {
       "config": {
-        "plugins": [
+        "plugins": {
           "cloudwatch": {
               "namespace": "[INSERT_NAMESPACE]"
           }
-        ]
+        }
       }
     }
     ```
