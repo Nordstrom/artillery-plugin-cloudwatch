@@ -4,10 +4,11 @@
   "description": "A plugin for artillery.io that records response data into cloudwatch.  See https://github.com/shoreditch-ops/artillery.  Also see http://docs.aws.amazon.com/AmazonCloudWatch/latest/DeveloperGuide/WhatIsCloudWatch.html.",
   "main": "index.js",
   "scripts": {
-    "jscs": "jscs .",
-    "jshint": "jshint --exclude node_modules .",
-    "unit": "mocha -r aws-sdk --recursive -R min tests",
-    "test": "npm run unit && npm run jscs && npm run jshint"
+    "jscs": "./node_modules/.bin/jscs .",
+    "jshint": "./node_modules/.bin/jshint --exclude node_modules .",
+    "unit": "./node_modules/.bin/mocha -r aws-sdk --recursive -R min tests",
+    "test": "npm run unit && npm run jscs && npm run jshint",
+    "publish": "./node_modules/.bin/np"
   },
   "repository": {
     "type": "git",
@@ -31,6 +32,7 @@
     "chai": "^3.5.0",
     "jscs": "^3.0.5",
     "jshint": "^2.9.2",
-    "mocha": "^2.5.3"
+    "mocha": "^2.5.3",
+    "np": "^2.16.0"
   }
 }
