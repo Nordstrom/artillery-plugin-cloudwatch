@@ -7,8 +7,10 @@
     "eslint": "./node_modules/.bin/eslint .",
     "jshint": "./node_modules/.bin/jshint --exclude node_modules .",
     "unit": "./node_modules/.bin/mocha -r aws-sdk --recursive -R min tests",
-    "test": "npm run unit && npm run eslint && npm run jshint",
-    "publish": "./node_modules/.bin/np"
+    "test": "npm run unit && npm run jscs && npm run jshint",
+    "publish": "./node_modules/.bin/np",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "repository": {
     "type": "git",
@@ -28,12 +30,15 @@
   "peerDependencies": {
     "aws-sdk": "^2.686.0"
   },
+  "dependencies": {
+    "snyk": "^1.316.1"
+  },
   "devDependencies": {
-    "aws-sdk": "^2.686.0",
-    "chai": "^4.2.0",
-    "eslint": "^7.1.0",
-    "jshint": "^2.11.1",
-    "mocha": "^7.2.0",
-    "np": "^6.2.3"
-  }
+    "chai": "^3.5.0",
+    "jscs": "^3.0.5",
+    "jshint": "^2.9.2",
+    "mocha": "^2.5.3",
+    "np": "^2.16.0"
+  },
+  "snyk": true
 }
