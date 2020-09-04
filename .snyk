@@ -1,5 +1,5 @@
 # Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
-version: v1.14.1
+version: v1.19.0
 ignore: {}
 # patches apply the minimum changes required to fix a vulnerability
 patch:
@@ -8,3 +8,9 @@ patch:
         patched: '2020-05-01T02:29:10.706Z'
     - aws-sdk > xml2js > xmlbuilder > lodash:
         patched: '2020-05-01T02:29:10.706Z'
+  'npm:debug:20170905':
+    - snyk > proxy-agent > pac-proxy-agent > get-uri > debug:
+        patched: '2020-09-04T02:29:09.371Z'
+  'npm:ms:20170412':
+    - snyk > proxy-agent > pac-proxy-agent > get-uri > debug > ms:
+        patched: '2020-09-04T02:29:09.371Z'
