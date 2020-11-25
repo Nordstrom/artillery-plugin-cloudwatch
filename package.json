@@ -31,7 +31,7 @@
     "aws-sdk": "^2.686.0"
   },
   "dependencies": {
-    "snyk": "^1.316.1"
+    "snyk": "^1.425.4"
   },
   "devDependencies": {
     "chai": "^3.5.0",
