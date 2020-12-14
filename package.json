@@ -7,7 +7,7 @@
     "eslint": "./node_modules/.bin/eslint .",
     "jshint": "./node_modules/.bin/jshint --exclude node_modules .",
     "unit": "./node_modules/.bin/mocha -r aws-sdk --recursive -R min tests",
-    "test": "npm run unit && npm run jscs && npm run jshint",
+    "test": "npm run unit && npm run jshint",
     "publish": "./node_modules/.bin/np",
     "snyk-protect": "snyk protect",
     "prepare": "npm run snyk-protect"

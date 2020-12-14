@@ -12,6 +12,7 @@
     "undef": true,
     "unused": false,
     "mocha": true,
+    "esversion": 6,
     "globals": {
         "define": true,
         "describe": true,
