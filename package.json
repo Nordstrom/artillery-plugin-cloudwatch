@@ -34,6 +34,7 @@
     "snyk": "^1.316.1"
   },
   "devDependencies": {
+    "aws-sdk": "^2.686.0",
     "chai": "^3.5.0",
     "jscs": "^3.0.5",
     "jshint": "^2.9.2",
